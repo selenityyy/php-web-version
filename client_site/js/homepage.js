@@ -38,7 +38,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function goHome() {
-    window.location.href = 'http://localhost/document-root-folder/client_site/public/index.php';
+    window.location.href = '/php-client-site-ahh/client_site/index.php';
 }
 
 // slider
