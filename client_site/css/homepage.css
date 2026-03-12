@@ -154,6 +154,58 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.slider-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid rgb(252, 179, 197);
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+    border-radius: 8px;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.slider-button {
+    background-color: rgb(106, 130, 62);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slider-button.prev { left: -40px; }
+.slider-button.next { right: -40px; }
+
+.slider-button:hover {
+    background-color: rgb(67, 48, 46);
+}
+
 /* content wrapper to push the footer all the way to the bottom */
 .content-wrapper {
     flex : 1;
