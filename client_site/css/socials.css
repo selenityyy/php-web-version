@@ -36,14 +36,13 @@ body {
 
 .socials-grid {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     padding: 20px;
     align-items: start;
-    text-align: center;
 }
 
-.socials-right {
+/* .socials-right {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -51,7 +50,7 @@ body {
     padding-left: 20px;
     justify-content: space-between;
     width: 80%;
-}
+} */
 
 /* content wrapper to push the footer all the way to the bottom */
 .content-wrapper {
