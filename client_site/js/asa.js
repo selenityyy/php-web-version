@@ -40,5 +40,5 @@ fetchEvents();
 
 // goes back to homepage when logo is clicked
 function goHome() {
-    window.location.href = "/csc372-projects/client_site/index.html";
+    window.location.href = "/php-client-site/client_site/index.php";
 }

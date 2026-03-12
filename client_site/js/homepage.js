@@ -38,5 +38,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function goHome() {
-    window.location.href = "index.html";
+    window.location.href = "/php-client-site/client_site/index.php";
 }
