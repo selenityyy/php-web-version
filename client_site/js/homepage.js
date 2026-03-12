@@ -38,5 +38,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function goHome() {
-    window.location.href = "/php-client-site/client_site/index.php";
+    window.location.href = 'http://localhost/document-root-folder/client_site/public/index.php';
 }
+
+// slider
+const sliderIndex = {asa: 0, pga: 0 };
+
+function changeSlide(id, direction) {
+    const slider = document.getElementById(id + '-slider');
+    const images = slider.getElementsByTagName('img');
+
+    images[sliderIndex[id]].classList.remove('active');
+    sliderIndex[id] = (sliderIndex[id] + direction + images.length) % images.length;
+    images[sliderIndex[id]].classList.add('active');
+}
+
+// initialize first images as 'active'
+document.querySelectorAll('.slider').forEach(slider => {
+    slider.querySelectorAll('img')[0].classList.add('active');
+});
